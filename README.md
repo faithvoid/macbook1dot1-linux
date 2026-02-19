@@ -41,6 +41,7 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 - Mail - Thunderbird
 - Facetime - Dino, or a chat client like Zoom / Discord in browser (this will probably be really laggy).
 - iMessage - KDE Connect SMS, Signal
+- iMovie - Kdenlive (can't imagine why you would put yourself through video editing on this, though)
 - Spotlight - uLauncher
 - iTunes - Strawberry
 - Apple Music - Cider (paid, AM client), Spotube (free, overall music player)
