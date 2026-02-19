@@ -38,12 +38,12 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 
 ## (Personal) Best macOS Software Equivalents
 - Safari - Chromium
-- Mail - Thunderbird
+- Mail - Thunderbird, Geary Mail
 - Facetime - Dino, or a chat client like Zoom / Discord in browser (this will probably be really laggy).
 - iMessage - KDE Connect SMS, Signal
 - iMovie - Kdenlive (can't imagine why you would put yourself through video editing on this, though)
 - Spotlight - uLauncher
-- iTunes - Strawberry
+- iTunes - Strawberry, Lollypop, Gnome Music
 - Apple Music - Cider (paid, AM client), Spotube (free, overall music player)
 - Quicktime - MPV (SMPlayer if you want a full-featured MPV GUI)
 - Photos - digiKam for viewing/editing camera photos, Ristretto for all photos, and Immich for a self-hosted Google Photos style interface.
