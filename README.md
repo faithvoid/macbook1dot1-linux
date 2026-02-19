@@ -1,6 +1,9 @@
 # macbook1dot1-linux
 Guide and files to help install modern Debian (12.13) with XFCE on a Macbook1,1 (CoreDuo), and theme it to look like macOS Catalina, a version of macOS that came out 10 years after Snow Leopard. Not finished yet. Using an SSD and having 3GB of RAM is HIGHLY recommended to make up for th system's CPU/GPU bottlenecks. 
 
+## Why?
+These first-generation Macbooks are still usable for certain day-to-day tasks (multimedia playback, word processing, light web browsing, even DJing with Mixxx) and super fun to play around with in 2026, it's just that the information about doing anything modern with them is far and few between compared to their 64-bit cousins that came out the year after.
+
 ## Installation:
 - Download debian-12.13.0-i386-netinst.iso. 
 - Unlike other Macbooks, you HAVE to use a 32-bit distro here, the entire system (including EFI) is 32-bit. If you have a 64-bit system but a 32-bit EFI, you're using Macbook2,2, which is visually identical but can actually run 64-bit systems with 32-bit bootloader patches!
