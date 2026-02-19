@@ -1,5 +1,5 @@
 # macbook1dot1-linux
-Guide and files to help install modern Debian (12.13) with XFCE on a Macbook1,1 (CoreDuo), and theme it to look like macOS Catalina, a version of macOS that came out 10 years after Snow Leopard. Not finished yet. Using an SSD and having 3GB of RAM is HIGHLY recommended to make up for th system's CPU/GPU bottlenecks. 
+Guide and files to help install modern Debian (12.13) with XFCE on a Macbook1,1 (CoreDuo), and theme it to look like macOS Catalina, a version of macOS that came out 10 years after the last compatible version of macOS, Snow Leopard. Not finished yet. Using an SSD and having 3GB of RAM is HIGHLY recommended to make up for th system's CPU/GPU bottlenecks. 
 
 ## Why?
 These first-generation Macbooks are still usable for certain day-to-day tasks (multimedia playback, word processing, light web browsing, even DJing with Mixxx) and super fun to play around with in 2026, it's just that the information about doing anything modern with them is far and few between compared to their 64-bit cousins that came out the year after.
@@ -10,7 +10,7 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 - Download EFI.zip
 - Using a partition manager of your choice, create a small 10MB FAT32 partition on your USB and copy the contents of "EFI.zip" to the root of that partition. (ie; copy "boot" folder to the root of your new partition)
 - Copy the Debian ISO to the secondary partition of your via USB using dd or a similar utility, or copy it to a seperate USB using Etcher or similar utility.
-- Use "Graphical Install" and proceed as normal, note that your mouse may not work during installation and you'll either have to install entirely via keyboard or insert a USB mouse. This will also take forever (took about an hour and a half for me on an SSD), so maybe watch a movie in the background as soon as Debian's graphical installer starts setting up it's new partitions, as that's the longest part.
+- Use "Graphical Install" and proceed as normal, making sure to select "XFCE" when asked to select a window manager. Note that your mouse may not work during installation and you'll either have to install entirely via keyboard or insert a USB mouse. This will also take forever (took about an hour and a half for me on an SSD), so maybe watch a movie in the background as soon as Debian's graphical installer starts setting up it's new partitions, as that's the longest part.
 - Once installed, run "su", then type "nano /etc/sudoers" and under "ROOT = ALL(ALL:ALL)", copy the exact same text but replace "ROOT" in the new copy with your current username.
 - Once you've added your user to sudoers, run "sudo apt update && sudo apt upgrade", followed by "sudo apt update && sudo apt dist-upgrade" to completely upgrade your system.
 - Reboot, and you should be all set, with an up-to-date installation of Debian 12.13 on a 6.x kernel! (The last version to properly support 32-bit systems).
@@ -27,6 +27,8 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 - Install "tlp" via "sudo apt install tlp" for better battery life / fan performance.
 - Use Chromium or a similar browser instead of Firefox, modern Firefox will hammer the CPU before you've even made it to a website, whereas Chromium is mostly usable on non-video sites.
 - Don't expect to watch YouTube in the browser here at any resolution, the CPU will start crying. The best way to watch YouTube videos is to download SMPlayer and yt-dlp, then copy the URL into "File -> URL", which will load the YouTube video in SMPlayer instead, using a lot less system resources. 480p content is ideal here, 720p CAN run via SMPlayer, but will drop frames.
+- For iMessage-style support and OS-wide phone integration, consider installing "KDE Connect" on your Macbook and your phone! You can easily share files wirelessly between devices, as well as send/receive SMS messages!
+- For iCloud-style storage, look into setting up GVFS mounts with Google Drive or Dropbox! A bit of work, but once it's done, should make cloud storage feel as seamless as iCloud.
 - More coming soon!
 
 ## Credits:
