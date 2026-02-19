@@ -21,6 +21,7 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 - (Optional) If you want to use rEFInd to dual-boot, mount your EFI partition (if no EFI folder is found in /boot/efi, run ``` sudo mkdir /mnt/efi ``` then ``` sudo mount /dev/sda1 /mnt/efi ```, then go to /mnt/efi and copy the contents from the "efi" folder on USB stick you made into /mnt/efi!
 
 ## Post-Install Tweaks:
+- If you notice screen tearing and other visual oddities, edit your grub config file (```sudo nano /etc/default/grub```) by adding "i915.modeset=1" to the end of "GRUB_CMDLINE_LINUX_DEFAULT". This allegedly may improve performance in some cases, too.
 - Install "tlp" via "sudo apt install tlp" for better battery life / fan performance.
 - Use Chromium or a similar browser instead of Firefox, modern Firefox will hammer the CPU before you've even made it to a website, whereas Chromium is mostly usable on non-video sites.
 - Don't expect to watch YouTube in the browser here at any resolution, the CPU will start crying. The best way to watch YouTube videos is to download SMPlayer and yt-dlp, then copy the URL into "File -> URL", which will load the YouTube video in SMPlayer instead, using a lot less system resources. 480p content is ideal here, 720p CAN run via SMPlayer, but will drop frames.
