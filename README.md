@@ -27,3 +27,7 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 - Use Chromium or a similar browser instead of Firefox, modern Firefox will hammer the CPU before you've even made it to a website, whereas Chromium is mostly usable on non-video sites.
 - Don't expect to watch YouTube in the browser here at any resolution, the CPU will start crying. The best way to watch YouTube videos is to download SMPlayer and yt-dlp, then copy the URL into "File -> URL", which will load the YouTube video in SMPlayer instead, using a lot less system resources. 480p content is ideal here, 720p CAN run via SMPlayer, but will drop frames.
 - More coming soon!
+
+## Credits:
+- rEFInd team - EFI bootloader
+- matomatical - "Grey Apple" rEFInd theme
