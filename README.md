@@ -1,5 +1,9 @@
 # macbook1dot1-linux
-Guide and files to help install modern Debian (12.13) with XFCE on a Macbook1,1 (CoreDuo), and theme it to look like macOS Catalina, a version of macOS that came out 10 years after the last compatible version of macOS, Snow Leopard. Not finished yet. Using an SSD and having 3GB of RAM is HIGHLY recommended to make up for th system's CPU/GPU bottlenecks. 
+Guide and files to help install modern Debian (12.13) with XFCE on a Macbook1,1 (CoreDuo), and theme it to look like macOS Catalina, a version of macOS that came out 10 years after the last compatible version of macOS, Snow Leopard. 
+
+Not finished yet. 
+
+Using an SSD and having 3GB of RAM is HIGHLY recommended to make up for the system's CPU/GPU bottlenecks. 
 
 ## Why?
 These first-generation Macbooks are still usable for certain day-to-day tasks (multimedia playback, word processing, light web browsing, even DJing with Mixxx) and super fun to play around with in 2026, it's just that the information about doing anything modern with them is far and few between compared to their 64-bit cousins that came out the year after.
