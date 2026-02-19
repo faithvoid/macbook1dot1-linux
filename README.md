@@ -23,9 +23,10 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 ## Theming to look more like macOS
 - Copy the contents of "Catalina.zip" to the root of your home folder
 - Once copied, go into "Appearance" and set your appearance to Catalina or Catalina Dark, and your icons to OS Catalina or OS Catalina Night
-- Remove "Plank 2" (dock bar) in XFCE panel settings if available.
+- Remove "Plank 2" (dock bar) in XFCE panel settings if available, and change the Enter/Leave opacity in the appearance settings of Panel 1 to ~75%.
 - Install and run "Plank" as your default dock bar to replicate the macOS style dock, and once in Plank, alt+click the bar, select Preferences, and select the "Catalina Night" theme.
-- Run "Session & Startup" and add "plank" as a new command to run on startup.
+- Install and run "ulauncher" (```sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher```) to replicate Spotlight functionality by pressing ctrl+space.
+- Run "Session & Startup" and add "plank" and "ulauncher" as new commands to run on startup!
 
 ## Post-Install Tweaks:
 - Install "tlp" via "sudo apt install tlp" for better battery life / fan performance.
