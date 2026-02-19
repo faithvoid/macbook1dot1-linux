@@ -10,6 +10,7 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 
 ## Installation:
 - **Unlike other Macbooks, you HAVE to use a 32-bit distro here, the entire system (including EFI) is 32-bit. If you have a 64-bit system but a 32-bit EFI, you're using Macbook2,2, which is visually identical but can actually run 64-bit systems with 32-bit bootloader patches!**
+- (Optional) If you'd like to disable the startup chime on boot, use the terminal in your macOS installation or on the recovery media and enter ```sudo nvram SystemAudioVolume=%80```. This is difficult to do (if not impossible without macOS recovery media) once Debian is installed!
 - Download debian-12.13.0-i386-netinst.iso. 
 - Download EFI.zip
 - Using a partition manager of your choice, create a small 10MB FAT32 partition on your USB and copy the contents of "EFI.zip" to the root of that partition. (ie; copy "boot" folder to the root of your new partition)
@@ -21,6 +22,8 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 - (Optional) If you want to use rEFInd to dual-boot, mount your EFI partition (if no EFI folder is found in /boot/efi, run ``` sudo mkdir /mnt/efi ``` then ``` sudo mount /dev/sda1 /mnt/efi ```, then go to /mnt/efi and copy the contents from the "efi" folder on USB stick you made into /mnt/efi!
 
 ## Post-Install Tweaks:
+- Install Synaptics & mtrack for better trackpad handling (```sudo apt install xxserver-xorg-input-synaptics && sudo apt install xserver-xorg-input-mtrack```)
+- To get your webcam working, download isight-firmware-tools (```sudo apt install isight-firmware-tools```) and [AppleUSBVideoSupport](https://archive.org/details/AppleUSBVideoSupport), and when prompted, point at the extracted file.
 - If you notice screen tearing and other visual oddities, edit your grub config file (```sudo nano /etc/default/grub```) by adding "i915.modeset=1" to the end of "GRUB_CMDLINE_LINUX_DEFAULT". This allegedly may improve performance in some cases, too.
 - Install "tlp" via "sudo apt install tlp" for better battery life / fan performance.
 - Use Chromium or a similar browser instead of Firefox, modern Firefox will hammer the CPU before you've even made it to a website, whereas Chromium is mostly usable on non-video sites.
@@ -49,7 +52,7 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 - Quicktime - MPV (SMPlayer if you want a full-featured MPV GUI)
 - Photos - digiKam for viewing/editing camera photos, Ristretto for all photos, and Immich for a self-hosted Google Photos style interface.
 - Photo Booth - Cheese
-- iCloud - GVFS mounts of Google Drive or Dropbox, SMB network shares, or self-hosted software like Immich / Nextcloud. 
+- iCloud - GVFS mounts of Google Drive or Dropbox, SMB network shares, or self-hosted software like Immich / Nextcloud.
 
 ## Credits:
 - rEFInd team - EFI bootloader
