@@ -14,6 +14,7 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 - Once installed, run "su", then type "nano /etc/sudoers" and under "ROOT = ALL(ALL:ALL)", copy the exact same text but replace "ROOT" in the new copy with your current username.
 - Once you've added your user to sudoers, run "sudo apt update && sudo apt upgrade", followed by "sudo apt update && sudo apt dist-upgrade" to completely upgrade your system.
 - Reboot, and you should be all set, with an up-to-date installation of Debian 12.13 on a 6.x kernel! (The last version to properly support 32-bit systems).
+- (Optional) If you want to use rEFInd to dual-boot, mount your EFI partition (if no EFI folder is found in /boot/efi, run ``` sudo mkdir /mnt/efi ``` then ``` sudo mount /dev/sda1 /mnt/efi ```, then go to /mnt/efi and copy the contents from the "efi" folder on USB stick you made into /mnt/efi!
 
 ## Theming to look more like macOS
 - Copy the contents of "Catalina.zip" to the root of your home folder
