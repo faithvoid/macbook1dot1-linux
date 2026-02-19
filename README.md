@@ -20,6 +20,14 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 - Reboot, and you should be all set, with an up-to-date installation of Debian 12.13 on a 6.x kernel! (The last version to properly support 32-bit systems).
 - (Optional) If you want to use rEFInd to dual-boot, mount your EFI partition (if no EFI folder is found in /boot/efi, run ``` sudo mkdir /mnt/efi ``` then ``` sudo mount /dev/sda1 /mnt/efi ```, then go to /mnt/efi and copy the contents from the "efi" folder on USB stick you made into /mnt/efi!
 
+## Post-Install Tweaks:
+- Install "tlp" via "sudo apt install tlp" for better battery life / fan performance.
+- Use Chromium or a similar browser instead of Firefox, modern Firefox will hammer the CPU before you've even made it to a website, whereas Chromium is mostly usable on non-video sites.
+- Don't expect to watch YouTube in the browser here at any resolution, the CPU will start crying. The best way to watch YouTube videos is to download SMPlayer and yt-dlp, then copy the URL into "File -> URL", which will load the YouTube video in SMPlayer instead, using a lot less system resources. 480p content is ideal here, 720p CAN run via SMPlayer, but will drop frames.
+- For iMessage-style support and OS-wide phone integration, consider installing "KDE Connect" on your Macbook and your phone! You can easily share files wirelessly between devices, as well as send/receive SMS messages!
+- For iCloud-style storage, look into setting up GVFS mounts with Google Drive or Dropbox! A bit of work, but once it's done, should make cloud storage feel as seamless as iCloud.
+- More coming soon!
+
 ## Theming to look more like macOS
 - Copy the contents of "Catalina.zip" to the root of your home folder
 - Once copied, go into "Appearance" and set your appearance to Catalina or Catalina Dark, and your icons to OS Catalina or OS Catalina Night
@@ -28,13 +36,18 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 - Install and run "ulauncher" (```sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher```) to replicate Spotlight functionality by pressing ctrl+space.
 - Run "Session & Startup" and add "plank" and "ulauncher" as new commands to run on startup!
 
-## Post-Install Tweaks:
-- Install "tlp" via "sudo apt install tlp" for better battery life / fan performance.
-- Use Chromium or a similar browser instead of Firefox, modern Firefox will hammer the CPU before you've even made it to a website, whereas Chromium is mostly usable on non-video sites.
-- Don't expect to watch YouTube in the browser here at any resolution, the CPU will start crying. The best way to watch YouTube videos is to download SMPlayer and yt-dlp, then copy the URL into "File -> URL", which will load the YouTube video in SMPlayer instead, using a lot less system resources. 480p content is ideal here, 720p CAN run via SMPlayer, but will drop frames.
-- For iMessage-style support and OS-wide phone integration, consider installing "KDE Connect" on your Macbook and your phone! You can easily share files wirelessly between devices, as well as send/receive SMS messages!
-- For iCloud-style storage, look into setting up GVFS mounts with Google Drive or Dropbox! A bit of work, but once it's done, should make cloud storage feel as seamless as iCloud.
-- More coming soon!
+## (Personal) Best macOS Software Equivalents
+- Safari - Chromium
+- Mail - Thunderbird
+- Facetime - Dino, or a chat client like Zoom / Discord in browser (this will probably be really laggy).
+- iMessage - KDE Connect SMS, Signal
+- Spotlight - uLauncher
+- iTunes - Strawberry
+- Apple Music - Cider (paid, AM client), Spotube (free, overall music player)
+- Quicktime - MPV (SMPlayer if you want a full-featured MPV GUI)
+- Photos - digiKam for viewing/editing camera photos, Ristretto for all photos, and Immich for a self-hosted Google Photos style interface.
+- Photo Booth - Cheese
+- iCloud - GVFS mounts of Google Drive or Dropbox, SMB network shares, or self-hosted software like Immich / Nextcloud. 
 
 ## Credits:
 - rEFInd team - EFI bootloader
