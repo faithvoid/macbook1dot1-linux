@@ -32,3 +32,5 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 ## Credits:
 - rEFInd team - EFI bootloader
 - matomatical - "Grey Apple" rEFInd theme
+- b00merang - "macOS Catalina" theme
+- zayronxio - "OS Catalina" icons
