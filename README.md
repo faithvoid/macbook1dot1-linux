@@ -42,8 +42,9 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 ## (Personal) Best macOS Software Equivalents
 ### Safari
 - Chromium
+- Falkon (lightweight Chromium fork)
 
-Firefox is not worth trying to use, it hammers the CPU too hard. 
+Firefox is not worth trying to use, it hammers the CPU too hard. Vivaldi also no longer supports 32-bit operating systems. 
 ### Mail
 - Geary Mail
 - Thunderbird
