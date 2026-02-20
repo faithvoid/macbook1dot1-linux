@@ -42,12 +42,14 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 ## (Personal) Best macOS Software Equivalents
 ### Safari
 - Chromium
+
 Firefox is not worth trying to use, it hammers the CPU too hard. 
 ### Mail
 - Geary Mail
 - Thunderbird
 ### Facetime
 - Dino
+
 Zoom/Discord are theoretically possible, but I wouldn't recommend it, as it'll most likely be a slideshow for everyone involved.
 ### iMessage
 - KDE Connect SMS (Android-only)
