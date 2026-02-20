@@ -26,8 +26,7 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 - To get your webcam working, download isight-firmware-tools (```sudo apt install isight-firmware-tools```) and [AppleUSBVideoSupport](https://archive.org/details/AppleUSBVideoSupport), and when prompted, point at the extracted file.
 - If you notice screen tearing and other visual oddities, edit your grub config file (```sudo nano /etc/default/grub```) by adding "i915.modeset=1" to the end of "GRUB_CMDLINE_LINUX_DEFAULT". This allegedly may improve performance in some cases, too.
 - Install "tlp" via "sudo apt install tlp" for better battery life / fan performance.
-- Use Chromium or a similar browser instead of Firefox, modern Firefox will hammer the CPU before you've even made it to a website, whereas Chromium is mostly usable on non-video sites.
-- Don't expect to watch YouTube in the browser here at any resolution, the CPU will start crying. The best way to watch YouTube videos is to download SMPlayer and yt-dlp, then copy the URL into "File -> URL", which will load the YouTube video in SMPlayer instead, using a lot less system resources. 480p content is ideal here, 720p CAN run via SMPlayer, but will drop frames. Also, the version of yt-dlp that ships in Debian 12.13 is outdated, meaning YouTube won't work in SMPlayer or Lollypop or other software that supports it out of the box. To install modern yt-dlp, run ```sudo wget -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/bin/yt-dlp && sudo chmod a+rx /usr/bin/yt-dlp```)
+- Don't expect to watch YouTube in the browser here at any resolution, the CPU will start crying. The best way to watch YouTube videos is to download SMPlayer and yt-dlp, then copy the URL into "File -> URL", which will load the YouTube video in SMPlayer instead, using a lot less system resources. 480p content is ideal here, 720p CAN run via SMPlayer, but will drop frames. Also, the version of yt-dlp that ships in Debian 12.13 is outdated, meaning YouTube won't work in SMPlayer or Lollypop or other software that supports it out of the box. To install modern yt-dlp, run ```sudo wget -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/bin/yt-dlp && sudo chmod a+rx /usr/bin/yt-dlp```
 - For iMessage-style support and OS-wide phone integration, consider installing "KDE Connect" on your Macbook and your phone! You can easily share files wirelessly between devices, as well as send/receive SMS messages!
 - For iCloud-style storage, look into setting up GVFS mounts with Google Drive or Dropbox! A bit of work, but once it's done, should make cloud storage feel as seamless as iCloud.
 - More coming soon!
@@ -41,18 +40,38 @@ These first-generation Macbooks are still usable for certain day-to-day tasks (m
 - Run "Session & Startup" and add "plank" and "ulauncher" as new commands to run on startup!
 
 ## (Personal) Best macOS Software Equivalents
-- Safari - Chromium
-- Mail - Thunderbird, Geary Mail
-- Facetime - Dino, or a chat client like Zoom / Discord in browser (this will probably be really laggy).
-- iMessage - KDE Connect SMS, Signal
-- iMovie - Kdenlive (can't imagine why you would put yourself through video editing on this, though)
-- Spotlight - uLauncher
-- iTunes - Strawberry, Lollypop, Gnome Music
-- Apple Music - Cider (paid, AM client), Spotube (free, overall music player)
-- Quicktime - MPV (SMPlayer if you want a full-featured MPV GUI)
-- Photos - digiKam for viewing/editing camera photos, Ristretto for all photos, and Immich for a self-hosted Google Photos style interface.
-- Photo Booth - Cheese
-- iCloud - GVFS mounts of Google Drive or Dropbox, SMB network shares, or self-hosted software like Immich / Nextcloud.
+### Safari
+- Chromium
+Firefox is not worth trying to use, it hammers the CPU too hard. 
+### Mail
+- Geary Mail
+- Thunderbird
+### Facetime
+- Dino
+Zoom/Discord are theoretically possible, but I wouldn't recommend it, as it'll most likely be a slideshow for everyone involved.
+### iMessage
+- KDE Connect SMS (Android-only)
+- Signal
+### iMovie
+- Kdenlive (can't imagine why you would put yourself through video editing on this, though)
+### Spotlight
+- uLauncher
+### iTunes
+- Gnome Music
+- Lollypop
+- Strawberry
+### Apple Music 
+- Cider (paid, AM client)
+- Spotube (free, overall music player)
+### Quicktime 
+- MPV (SMPlayer if you want a full-featured MPV GUI)
+### Photos
+- digiKam for viewing/editing camera photos
+- Ristretto for all photos, and Immich for a self-hosted Google Photos style interface.
+### Photo Booth
+- Cheese
+### iCloud
+- GVFS mounts of Google Drive or Dropbox, SMB network shares, or self-hosted software like Immich / Nextcloud.
 
 ## Credits:
 - rEFInd team - EFI bootloader
